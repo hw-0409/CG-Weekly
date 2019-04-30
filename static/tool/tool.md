@@ -1,13 +1,13 @@
 
 
-### 数字转货币格式 将100000转为100,000形式*/
----
-> export const commas = function (val) {
->     return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-> }
+#### 数字转货币格式 将100000转为100,000形式*/
+```
+export const commas = function (val) {
+     return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+```
 
-
-### 保留两位小数并且整数部分三位一个逗号分隔符的数字金钱标准表示法：/*将100000转为100,000.00形式*/
+#### 保留两位小数并且整数部分三位一个逗号分隔符的数字金钱标准表示法：/*将100000转为100,000.00形式*/
 ```
 export const dealNumber = function (money) {
     if (money && money != null) {
@@ -23,7 +23,7 @@ export const dealNumber = function (money) {
     }
 };
 ```
-###  /*将100,000.00转为100000.00形式*/
+####  /*将100,000.00转为100000.00形式*/
 ```
 export const undoNubmer = function (money) {
     if (money && money != null) {
